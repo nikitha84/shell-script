@@ -14,10 +14,10 @@ echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 VALIDATE(){
     if [ $1 -ne 0 ]
 then
-    echo -e "ERROR: $2 ...$R Installing git is faild $N"
+    echo -e "ERROR: $2 ...$R faild $N"
     exit 1
 else
-    echo -e "$2 ...$G Installing git is success $N"
+    echo -e "$2 ...$G success $N"
 fi
 }
 if [ $ID -ne 0 ]
