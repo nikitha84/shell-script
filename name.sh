@@ -1,5 +1,5 @@
 
 #!/bin/bash
 
-name="Alice"
-echo "Hello, $name!
+NAME=$(Ravi)
+echo "Hello, $NAME"
