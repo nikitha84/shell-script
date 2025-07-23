@@ -11,7 +11,7 @@ N="\e[0m"
 echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
 
 VALIDATE(){
-    if [ $1 -ne 0 ]
+if [ $1 -ne 0 ]
 then
     echo -e "ERROR: $2 ...$R faild $N"
     exit 1
