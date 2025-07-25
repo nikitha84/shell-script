@@ -5,7 +5,7 @@ filename=data.txt
             
 # Check if file exists
 if [[ ! -f "$filename" ]]; then
-echo "File not found!"
+echo "File is data.txt"
 exit 1
 fi
             
