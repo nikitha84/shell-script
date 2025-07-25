@@ -18,7 +18,7 @@ Start Postfix on boot
 systemctl enable postfix 
 
 Open the /etc/postfix/main.cf file.
-vi /etc/postfix/main.cf 
+vim /etc/postfix/main.cf 
 
 append the following into the file at the end
 relayhost = [smtp.gmail.com]:587
