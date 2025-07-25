@@ -4,7 +4,7 @@
 filename="$1"
             
 # Check if file exists
-if [[ ! -z "$filename" ]]; then
+if [[ ! -f "$filename" ]]; then
 echo "File not found!"
 exit 1
 fi
