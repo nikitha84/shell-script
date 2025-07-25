@@ -1,7 +1,7 @@
 #!/bin/bash
             
 # File to read (passed as the first argument)
-filename="$1"
+filename=data.txt
             
 # Check if file exists
 if [[ ! -f "$filename" ]]; then
