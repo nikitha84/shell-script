@@ -1,16 +1,19 @@
 #!/bin/bash
-            
-# File to read (passed as the first argument)
-filename=data.txt
-            
-# Check if file exists
+
+# Set the filename (you can also pass it as a command-line argument)
+filename="example.txt"
+
+# Check if the file exists and is a regular file
 if [[ ! -f "$filename" ]]; then
-echo "File is data.txt"
-exit 1
+    echo "Error: File '$filename' not found."
+    exit 1
 fi
-            
+
 # Read the file line by line
 while IFS= read -r line; do
-cho "Line: $line"
+    echo "Line: $line"
 done < "$filename"
+
+echo -e "Hello\nWorld\n123" > example.txt
+
 
