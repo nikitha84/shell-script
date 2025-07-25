@@ -2,7 +2,7 @@
 
 # Set the filename (you can also pass it as a command-line argument)
 filename="example.txt"
-
+file=""
 # Check if the file exists and is a regular file
 if [[ ! -f "$filename" ]]; then
     echo "Error: File '$filename' not found."
