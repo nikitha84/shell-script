@@ -1,13 +1,16 @@
 #!/bin/bash
-
-# Check if a file is provided
-if [ -z "$1" ]; then
-  echo "Usage: $0 filename"
-  exit 1
+            
+# File to read (passed as the first argument)
+filename="$1"
+            
+# Check if file exists
+if [[ ! -z "$filename" ]]; then
+echo "File not found!"
+exit 1
 fi
-
+            
 # Read the file line by line
-while IFS= read -r line
-do
-  echo "$line"
-done < "$1"
+while IFS= read -r line; do
+cho "Line: $line"
+done < "$filename"
+
